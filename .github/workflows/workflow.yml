@@ -1,13 +1,15 @@
-name: Test Deploy
+name: nan-non-wedding-website CI/CD
 
 on:
   push:
     branches:
       - master
 
+run-name: Deploy nan-non-wedding-website by ${{ github.actor }} on ${{ github.ref }}
+
 jobs:
   deploy:
     runs-on: ubuntu-latest
     steps:
       - name: Hello World Action
-        run: echo "ello World Action"
+        run: echo "Hello World Action"

@@ -1,7 +1,7 @@
 import './globals.css'
 
 export const metadata = {
-  title: 'Our Wedding',
+  title: 'Nan & Non Wedding',
   description: 'Join us to celebrate our wedding day!',
 }
 

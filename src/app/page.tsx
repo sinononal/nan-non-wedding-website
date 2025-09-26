@@ -38,12 +38,32 @@ export default function Home() {
       {/* Hero Section */}
       <FadeInSection>
         <section className="h-screen bg-gradient-to-b from-pink-100 via-white to-white flex flex-col items-center justify-center text-center px-4">
-          <h1 className="text-5xl md:text-6xl font-extrabold mb-4 tracking-wide text-gray-800">
+          {/* รูปคู่ */}
+          <div className="relative w-40 h-40 md:w-56 md:h-56 mb-6">
+            <Image
+              src="/images/gallery-2.jpg" // เปลี่ยนเป็น path รูปจริงของคุณ
+              alt="Nan & Non"
+              fill
+              className="rounded-full object-cover w-full h-full shadow-lg border-4 border-white"
+            />
+          </div>
+
+          {/* ชื่อบ่าวสาว */}
+          <h1 className="text-5xl md:text-6xl font-extrabold mb-2 tracking-wide text-gray-800">
             Nan & Non
           </h1>
-          <p className="text-lg md:text-2xl mb-8 text-gray-600">
+
+          {/* วันที่แต่งงาน */}
+          <p className="text-xl md:text-2xl text-gray-700 mb-6">
+            September 26, 2026
+          </p>
+
+          {/* ข้อความเชิญ */}
+          <p className="text-lg md:text-xl mb-8 text-gray-600 max-w-xl">
             Together with their families, invite you to celebrate their wedding
           </p>
+
+          {/* ปุ่ม */}
           <a
             href="#countdown"
             className="px-8 py-3 bg-pink-500 text-white rounded-full shadow-md hover:bg-pink-600 transition"
@@ -52,6 +72,7 @@ export default function Home() {
           </a>
         </section>
       </FadeInSection>
+
       
 
       {/* Countdown Section */}
